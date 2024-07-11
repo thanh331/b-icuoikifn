@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chi tiết sản phẩm</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c3ca;
+}
+header {
+    background-image: url('backgroud.jfif');
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  body{background-color: rgb(196, 226, 228);;}
+  h1{
+    color: rgb(161, 105, 154);
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .nav ul li{margin-right: 20px;}
+.nav ul li:hover{background-color: black;
+  padding: 10px;}
+  nav ul li a {
+    color: #b85aa8;
+    text-decoration: none;
+  }
+  .large-image {
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+.small-image {
+    width: 100px;
+    margin: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{text-align: center;
+}
+    </style>
+    <script >
+        $(document).ready(function(){
+            $('.large-image').hover(function() {
+                $(this).css("transform", "scale(1.2)");
+            }, function() {
+                $(this).css("transform", "scale(1)");
+            });
+    
+            $('.small-image').click(function() {
+                var smallImageSrc = $(this).attr('src');
+                $('.large-image').attr('src', smallImageSrc);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./taoanhdep_logo_mascot_anonymous_76112.png" width="200" height="200">
+        </div>
+    <h1>Shop Thanh</h1>
+    <nav class="nav">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="giohang.html">Giỏ Hàng</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br><br>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img class="large-image" src="./giaynikeforce1.webp" alt="Large Image" width="100px" height="450px">
+                <div>
+                    <img class="small-image" src="./giaynikeforce1anh2.webp" alt="Small Image 1">
+                    <img class="small-image" src="./giaynikeforce1.webp" alt="Small Image 2">
+                    <img class="small-image" src="./Nike Air Force 1 Trắnganh3.jpg" alt="Small Image 3">
+                </div>
+            </div>
+            <div class="column">
+                <h2>Nike Air Force 1 Trắng</h2><br><br>
+                <p>Sản phẩm bao gồm: Nike Air Force 1 Trắng (bản chính hãng)</p>
+                <p> Chi tiết sản phẩm: Nike Air Force 1 là một trong những dòng sản phẩm đầu tiên của thương hiệu Nike được trình làng vào năm 1982 (tức sau 11 năm thành lập Công ty). <p>Ngay từ những ngày đầu ra mắt, Nike Air Force 1 được nhà thiết kế ông Bruce Kilgore với định vị là dòng giày dành cho dân chơi bóng rổ và vô cùng thành công ở thời điểm bấy giờ về cả doanh thu lẫn độ phổ biến. </p>
+                <br>
+                <br>
+                <p>Giá gốc:<del>1.500.000đ</del></p>
+                <p id="price">Giá: 950,000đ</p>
+                <a href="./giohang.html"><button>Thanh toán</button></a>
+            </div>
+          </div>
+    </main>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img class="large-image" src="./giaydo1.webp" alt="Large Image" width="100px" height="450px">
+                <div>
+                    <img class="small-image" src="./giaydo2.jpg" alt="Small Image 1">
+                    <img class="small-image" src="./giaydo1.webp" alt="Small Image 2">
+                    <img class="small-image" src="./giaydo3.jpg" alt="Small Image 3">
+                </div>
+            </div>
+            <div class="column">
+                <h2>NIKE DUNK LOW SP UNIVERSITY RED</h2><br><br>
+                <p>Sản phẩm bao gồm: NIKE DUNK LOW SP UNIVERSITY RED(bản chính hãng)</p>
+                <p> Chi tiết sản phẩm: Nike Dunk ra mắt như một phần của chương trình Nike College Colour năm 1985, một chương trình phân phối giày với màu sắc của 12 giải đấu bóng rổ học đường nổi tiếng cho phép người hâm mộ ủng hộ các đội yêu thích của họ từ đầu đến chân.</p>
+                <br>
+                <br>
+                <p id="price">Giá: 950,000đ</p>
+                <a href="./giohang.html"><button>Thanh toán</button></a>
+            </div>
+          </div>
+    </main>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img class="large-image" src="./giaynau1.jpg" alt="Large Image" width="100px" height="450px">
+                <div>
+                    <img class="small-image" src="./giaynau1.jpg" alt="Small Image 1">
+                    <img class="small-image" src="./giaynau2.jpg" alt="Small Image 2">
+                    <img class="small-image" src="./giaynau3.jpeg" alt="Small Image 3">
+                </div>
+            </div>
+            <div class="column">
+                <h2>Travis Scott x Air Jordan 1 OG High</h2><br><br>
+                <p>Sản phẩm bao gồm: Travis Scott x Air Jordan 1 OG High(bản chính hãng)</p>
+                <p> Chi tiết sản phẩm: Đôi Giày Travis Scott x Air Jordan 1 Retro High OG ‘Mocha’ là một sản phẩm độc đáo của Nike, được tạo ra thông qua sự hợp tác sáng tạo với nghệ sĩ âm nhạc nổi tiếng Travis Scott. Với thiết kế độc đáo và sự ảnh hưởng mạnh mẽ từ Travis Scott. Đôi giày này thu hút sự chú ý của cộng đồng sneakerhead.</p>
+                <br>
+                <br>
+                <p>Giá gốc:<del>2.500.000đ</del></p>
+                <p id="price">Giá: 950,000đ</p>
+                <a href="./giohang.html"><button>Thanh toán</button></a>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
